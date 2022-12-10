@@ -22,7 +22,8 @@
 void setup()
 {
   blesetup();
-  Serial.begin(115200);
+  //while (!bleuart.available()) {}; // Es muss ein Zeichen gesendet werrden, damit es weiter geht, ENTER reicht nicht
+  //bleuart.print("Verbindung steht");
 }
 
 

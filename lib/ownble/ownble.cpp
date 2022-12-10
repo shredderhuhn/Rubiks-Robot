@@ -85,8 +85,10 @@ void connect_callback(uint16_t conn_handle)
   char central_name[32] = { 0 };
   connection->getPeerName(central_name, sizeof(central_name));
 
-  //Serial.print("Connected to ");
-  //Serial.println(central_name);
+  // geht aus irgendeinem Grund nicht
+  //delay(1000);
+  //bleuart.print("Connected to ");
+  //bleuart.println(central_name);
 }
 
 /**
